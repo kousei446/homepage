@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-
-function App() {
+import Pc1 from './pc/pc';
+import Smart from './smartphone/smart1';
+const App = () => {
+  const [button,setButton]=useState("スマホ画面へ")
+  const [change, setChange] = useState(0)
+  const swich = () => {
+    setChange(change === 1 ? 0 : 1);
+    setButton(change === 0 ? "PC画面へ" : "スマホ画面へ")
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {change === 0 ? <Pc1 /> : <Smart />}
+      <button
+        onClick={swich}
+      >{button}</button>
     </div>
-  );
-}
+
+  )
+};
 
 export default App;
