@@ -7,7 +7,7 @@ export const Button=()=>{
     const change=()=>{
         setScreen(screen)
         console.log("こんにちわ")
-        console.log("こんにちわ")
+        console.log("こんにちわ＋＋")
         
         if (screen===1) {
             return(
