@@ -1,4 +1,4 @@
-import Menu from "./menu/Menu"
+import Menu from "./menu/Menuu"
 function Pc1() {
     return (
         <div style={{display:"flex"}}>
@@ -6,7 +6,7 @@ function Pc1() {
                 <Menu/>
             </div>
             <div>
-                <h>はじめまして</h>
+                <h>初めまして</h>
             </div>
         </div >
     )
