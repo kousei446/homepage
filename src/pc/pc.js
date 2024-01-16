@@ -6,7 +6,7 @@ function Pc1() {
                 <Menu/>
             </div>
             <div>
-                <h>はじめまして</h>
+                <h>初めまして</h>
             </div>
         </div >
     )
