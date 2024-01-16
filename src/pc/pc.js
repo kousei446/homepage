@@ -1,4 +1,4 @@
-import Menu from "./menu/Menu"
+import Menu from "./menu/Menuu"
 function Pc1() {
     return (
         <div style={{display:"flex"}}>
