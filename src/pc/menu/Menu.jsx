@@ -3,10 +3,11 @@ import About from './Aboutt'
 import Hobby from './Hobby'
 import Product from './Productt'
 import Schoollife from './Schoollife'
+import "./Menu.css"
 
 function Munu() {
   return (
-    <div style={{width: "100%",height: "900px",flexShrink: "0",background: "#D9D9D9"}}>
+    <div className="menu" style={{width: "100%",height: "900px",flexShrink: "0"}}>
       <About/>
       <Hobby/>
       <Product/>
